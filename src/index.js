@@ -3,14 +3,19 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-function App() {
+function Books() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Book />
+      <Book />
+      <Book />
     </div>
   );
 }
 
+const Book = () => {
+  return <h1>This is a book</h1>;
+};
+
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Books />, rootElement);
