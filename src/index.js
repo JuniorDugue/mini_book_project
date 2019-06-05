@@ -4,11 +4,13 @@ import ReactDOM from "react-dom";
 import Book from "./components/Book";
 
 import "./styles.scss";
-import CoverImage from "./components/CoverImage";
 
 function Books() {
   return (
     <div className="App">
+      <Book />
+      <Book />
+      <Book />
       <Book />
     </div>
   );
